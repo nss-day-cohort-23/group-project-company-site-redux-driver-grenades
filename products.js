@@ -45,11 +45,13 @@ let string = '';
 
  for(i=0; i<classes.length; i++){
     classDiv = document.getElementById('classes');  
-    string +=`<p> <img src=${classes[i].img}></p>
-    <p>${classes[i].name}</p>
-    <p>${classes[i].startdate}</p>
-    <p>${classes[i].spots}</p>
-    <p> $${classes[i].price}</p>`
+    string +=`<div class="card"> <img src=${classes[i].img}>
+    <div id="textDiv">
+    <div class="text" id="name">${classes[i].name}</div>
+    <div class="text" id="startdate">Start Date: ${classes[i].startdate}</div>
+    <div class="text" id="spots"> Open Spots: ${classes[i].spots}</div>
+    <div class="text" id="price"> Price: $${classes[i].price}</div>
+    </div></div>`
     
 
     classDiv.innerHTML = string;
