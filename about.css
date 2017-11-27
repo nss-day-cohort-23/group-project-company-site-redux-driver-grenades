@@ -83,5 +83,15 @@ footer{
     line-height: 1.5;
 }
 
-
+main > header {
+    text-align: center;  
+}
+.abImg {
+    position: fixed;
+    z-index: -1;
+}
+.info {
+    padding-left: 30%;
+    padding-right: 30%;
+}
 
