@@ -39,7 +39,10 @@ a:hover {
     margin-top: 5em;
     height: 70vh;
     width: 100vw;
-    background: url("images/main-img.jpg") no-repeat center center fixed;
+    background:   linear-gradient(
+        rgba(217, 217, 217, 0.45), 
+        rgba(255, 255, 255, 0.7)
+        ),url("images/main-img.jpg") no-repeat center center fixed;
 }
 
 .header-text{
@@ -77,10 +80,14 @@ a:hover {
 
 }
 
+main{
+    margin-bottom: 2.5em; 
+}
+
 footer{
     padding: 1em;
     bottom: 0;
-    line-height: 1.5;
+    height: 2em;
     position: fixed;
     background: white;
     text-align: center;
