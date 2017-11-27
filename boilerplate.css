@@ -78,9 +78,13 @@ a:hover {
 }
 
 footer{
-    padding: 2em;
+    padding: 1em;
     bottom: 0;
     line-height: 1.5;
+    position: fixed;
+    background: white;
+    text-align: center;
+    width: 100%;
 }
 
 
