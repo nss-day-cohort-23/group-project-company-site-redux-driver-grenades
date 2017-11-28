@@ -39,7 +39,7 @@ a:hover {
     margin-top: 5em;
     height: 70vh;
     width: 100vw;
-    background: url("images/driveMain.jpeg") no-repeat center center fixed;
+    background: url("../images/driveMain.jpeg");
 }
 
 .header-text{
@@ -85,13 +85,44 @@ footer{
 
 main > header {
     text-align: center;  
+    font-weight: bold;
+    width: 10em;
+    margin: auto;
 }
 .abImg {
-    position: fixed;
-    z-index: -1;
+    width: 50%;
+    height: 100%;
+    
+    
 }
 .info {
-    padding-left: 30%;
-    padding-right: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(182, 194, 194, .8);
+}
+p {
+    
+    text-align: right;
+    width: 40%;
+    text-align: justify;
+}
+.abImg1 {
+    width: 50%;
+    height: 50%;
+    
+    
+}
+.info1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    background-color: rgba(182, 194, 194, .8);
+}
+p {
+    
+    text-align: left;
+    width: 40%;
+    text-align: justify;
+    padding: 2em;
 }
 
