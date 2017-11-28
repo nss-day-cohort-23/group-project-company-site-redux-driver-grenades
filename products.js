@@ -1,0 +1,59 @@
+let classes = [
+  {
+  name: "Driver's Ed",
+  startdate: '12-1-17',
+  spots: 15,
+  price: 150,
+  img: '/images/driversed.jpg',
+  
+  },
+  {
+  name: "Learner's Permit",
+  startdate: '12-15-17',
+  spots: 20,
+  price: 79.99,
+  img: '/images/lp.jpg',
+
+  },
+  {
+    name: "Insurance Discount",
+    startdate: '1-1-18',
+    spots: 33,
+    price: 5000000,
+    img: '/images/insurance.jpg',
+    
+  },
+  {
+    name: "Traffic School",
+    startdate: '1-31-18',
+    spots: 26,
+    price: 3,
+    img: '/images/sb.png',
+    
+  },
+  {
+    name: "Agressive Driving",
+    startdate: '2-7-18',
+    spots: 100,
+    price: 42,
+    img: '/images/agressive.jpg'
+    
+  }
+
+]
+let string = '';
+
+ for(i=0; i<classes.length; i++){
+    classDiv = document.getElementById('classes');  
+    string +=`<div class="card"> <img src=${classes[i].img}>
+    <div id="textDiv">
+    <div class="text" id="name">${classes[i].name}</div>
+    <div class="text" id="startdate">Start Date: ${classes[i].startdate}</div>
+    <div class="text" id="spots"> Open Spots: ${classes[i].spots}</div>
+    <div class="text" id="price"> Price: $${classes[i].price}</div>
+    </div></div>`
+    
+
+    classDiv.innerHTML = string;
+
+ }
