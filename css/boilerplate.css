@@ -42,7 +42,7 @@ a:hover {
     background:   linear-gradient(
         rgba(217, 217, 217, 0.45), 
         rgba(255, 255, 255, 0.7)
-        ),url("images/main-img.jpg") no-repeat center center fixed;
+        ),url("..images/main-img.jpg") no-repeat center center fixed;
 }
 
 .header-text{
