@@ -43,17 +43,38 @@ let classes = [
 ]
 let string = '';
 
- for(i=0; i<classes.length; i++){
+ for(let i=0; i<classes.length; i++){
     classDiv = document.getElementById('classes');  
     string +=`<div class="card"> <img src=${classes[i].img}>
     <div id="textDiv">
     <div class="text" id="name">${classes[i].name}</div>
     <div class="text" id="startdate">Start Date: ${classes[i].startdate}</div>
-    <div class="text" id="spots"> Open Spots: ${classes[i].spots}</div>
+    <div class="text" id="spots_${[i]}"> Open Spots: ${classes[i].spots}</div>
     <div class="text" id="price"> Price: $${classes[i].price}</div>
+    <button id="button_${[i]}">Enroll</button>    
     </div></div>`
-    
 
     classDiv.innerHTML = string;
-
+    
+    
+   
  }
+
+
+function subtract(){
+  for (let i = 0; i < classes.length; i++){
+
+let buttonNumber = 'button_' + i;
+console.log(buttonNumber, 'this is the conditional')
+
+  document.getElementById(buttonNumber).addEventListener('click',function (){
+    console.log(i);
+    classes[i].spots --;
+    console.log(i, classes[i].spots, buttonNumber, "spots_"+(i) , 'spots in this class');
+    document.getElementById("spots_"+i).innerHTML = 'Open Spots:'+ classes[i].spots;
+  });
+  console.log('at least it got here')
+}
+}
+subtract();
+ 
