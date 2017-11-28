@@ -1,0 +1,39 @@
+main{
+    width: 100%;
+    padding:1em;
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0.9), 
+        rgba(255, 255, 255, 0.401)
+        ), url("images/asphalt.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+    
+
+.homepage-section{
+    width: 75%;
+    margin: 1.5em auto;
+    padding: 2em;
+    border-radius: 0.7em;
+    display: flex;
+    background-color: rgba(200, 200, 200, 0.72);
+}
+
+.homepage-text{
+    width: 50%;
+    margin: 1em;
+    line-height: 1.7em;
+
+}
+.homepage-img{
+    width: 20em;
+    height: 12em;
+    border-radius: 0.5em;
+    margin: 3em 1em 1em 1em;
+}
+
+
+
+.two{
+    flex-direction: row-reverse;
+}
