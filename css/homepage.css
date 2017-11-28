@@ -5,7 +5,7 @@ main{
     linear-gradient(
         rgba(255, 255, 255, 0.9), 
         rgba(255, 255, 255, 0.401)
-        ), url("images/asphalt.jpg") no-repeat center fixed;
+        ), url("../images/asphalt.jpg") no-repeat center fixed;
     background-size: cover;
 }
     
