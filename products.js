@@ -1,18 +1,17 @@
-let classes = [
-  {
-  name: "Driver's Ed",
-  startdate: '12-1-17',
-  spots: 15,
-  price: 150,
-  img: '/images/driversed.jpg',
-  
+let classes = [{
+    name: "Driver's Ed",
+    startdate: '12-1-17',
+    spots: 15,
+    price: 150,
+    img: '/images/driversed.jpg',
+
   },
   {
-  name: "Learner's Permit",
-  startdate: '12-15-17',
-  spots: 20,
-  price: 79.99,
-  img: '/images/lp.jpg',
+    name: "Learner's Permit",
+    startdate: '12-15-17',
+    spots: 20,
+    price: 79.99,
+    img: '/images/lp.jpg',
 
   },
   {
@@ -21,7 +20,7 @@ let classes = [
     spots: 33,
     price: 5000000,
     img: '/images/insurance.jpg',
-    
+
   },
   {
     name: "Traffic School",
@@ -29,7 +28,7 @@ let classes = [
     spots: 26,
     price: 3,
     img: '/images/sb.png',
-    
+
   },
   {
     name: "Agressive Driving",
@@ -37,15 +36,15 @@ let classes = [
     spots: 100,
     price: 42,
     img: '/images/agressive.jpg'
-    
+
   }
 
 ]
 let string = '';
 
- for(let i=0; i<classes.length; i++){
-    classDiv = document.getElementById('classes');  
-    string +=`<div class="card"> <img src=${classes[i].img}>
+for (let i = 0; i < classes.length; i++) {
+  classDiv = document.getElementById('classes');
+  string += `<div class="card"> <img src=${classes[i].img}>
     <div id="textDiv">
     <div class="text" id="name">${classes[i].name}</div>
     <div class="text" id="startdate">Start Date: ${classes[i].startdate}</div>
@@ -54,27 +53,23 @@ let string = '';
     <button id="button_${[i]}">Enroll</button>    
     </div></div>`
 
-    classDiv.innerHTML = string;
-    
-    
-   
- }
+  classDiv.innerHTML = string;
 
-
-function subtract(){
-  for (let i = 0; i < classes.length; i++){
-
-let buttonNumber = 'button_' + i;
-console.log(buttonNumber, 'this is the conditional')
-
-  document.getElementById(buttonNumber).addEventListener('click',function (){
-    console.log(i);
-    classes[i].spots --;
-    console.log(i, classes[i].spots, buttonNumber, "spots_"+(i) , 'spots in this class');
-    document.getElementById("spots_"+i).innerHTML = 'Open Spots:'+ classes[i].spots;
-  });
-  console.log('at least it got here')
 }
+
+
+function subtract() {
+  for (let i = 0; i < classes.length; i++) {
+
+    let buttonNumber = 'button_' + i;
+    document.getElementById(buttonNumber).addEventListener('click', function () {
+      if (classes[i].spots >0){
+      classes[i].spots--;
+      document.getElementById("spots_" + i).innerHTML = 'Open Spots:' + classes[i].spots;
+      }else {
+        alert('This class is full. Try next time Sucka');
+      }
+    });
+  }
 }
 subtract();
- 
