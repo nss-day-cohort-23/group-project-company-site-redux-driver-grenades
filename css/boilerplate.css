@@ -3,6 +3,16 @@
     color: rgb(67, 67, 67);
 }
 
+main{
+  width: 100%;
+  padding:1em;
+  background: 
+  linear-gradient(
+      rgba(255, 255, 255, 0.9), 
+      rgba(255, 255, 255, 0.401)
+      ), url("../images/asphalt.jpg") no-repeat center fixed;
+  background-size: cover;
+}
 h1, h2, h3, h4, h5{
     font-family: 'Roboto', sans-serif;
 }

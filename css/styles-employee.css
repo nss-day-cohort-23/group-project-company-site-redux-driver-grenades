@@ -27,8 +27,21 @@
     border-radius: 25px;
 }
 
+.main-header{
+    margin-top: 5em;
+    height: 70vh;
+    width: 100vw;
+    background:   linear-gradient(
+        rgba(217, 217, 217, 0.45), 
+        rgba(255, 255, 255, 0.7)
+        ),url("../images/roadmap_banner_1.jpg") no-repeat center center fixed;
+}
+
 span {
     text-decoration: underline;
     color: rgb(166, 58, 58);
 }
 
+main {
+    margin-bottom: 5em;
+}
